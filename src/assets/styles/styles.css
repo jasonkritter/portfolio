@@ -537,7 +537,7 @@ table tr:nth-child(even) {
 .resume-wrapper .right-panel .box {
   display: flex;
   flex-direction: row;
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: 8.5fr 2fr;
   gap: 2rem;
