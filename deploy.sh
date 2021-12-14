@@ -2,6 +2,7 @@
 # abort on errors
 set -e
 # build
+npm install
 npm run build
 # navigate into the build output directory
 cd dist
@@ -10,5 +11,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:jasonkritter/portfolio.git master:gh-pages
+git push -f git@github.com:jasonkritter/portfolio.git main:gh-pages
 cd -
