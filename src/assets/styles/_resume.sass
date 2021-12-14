@@ -1,0 +1,225 @@
+.resume-wrapper
+    position: relative
+    width: 100%
+    background-color: #fff
+    display: grid
+    grid-template-columns: 2fr 5fr
+    z-index: 1
+    a
+        color: $green-blue-crayola
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    .left-panel
+        position: relative
+        background-color: rgba($black-coffee, 1)
+        padding: 2rem
+ 
+        h3
+            color: $platinum
+            margin-bottom: 0.75rem
+            text-transform: uppercase
+            letter-spacing: 0.05rem
+            font-weight: bold
+            font-size: 1rem
+        p
+            margin: 0
+            padding: 0
+            color: $platinum
+            font-size: 0.9rem
+        ul
+            color: $platinum
+        .profile-wrapper
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: left
+            padding-top: 1rem
+            padding-bottom: 1rem
+            border-top: 0.05rem solid $tangerine
+            border-bottom: 0.05rem solid $tangerine
+            color: $platinum
+            text-align: center
+            h2
+                letter-spacing: 0.05rem
+                color: $platinum
+                font-size: 1.6rem
+                text-transform: uppercase
+                font-weight: 600
+            span.job-title
+                margin-top: 0.5rem
+                font-size: 1.1rem
+                font-weight: 300
+                letter-spacing: 0.025rem
+                font-family: monospace
+        .contact-wrapper
+            padding-top: 2rem
+            h3
+                color: $platinum
+                text-transform: uppercase
+                font-weight: normal
+                letter-spacing: 0.05rem
+                margin-bottom: 0.5rem
+                font-size: 1.1rem
+            ul
+                position: relative
+                margin: 0
+                padding: 0
+                li
+                    list-style: none
+                    position: relative
+                    margin: 0
+                    padding: 0.2rem
+            span
+                margin-left: 0.5rem
+                color: $platinum
+                font-family: monospace
+                font-size: 1rem
+                &.icon
+                    margin-left: 0
+                    text-align: center
+                    width: 1rem
+                    display: inline-block
+                    color: $tangerine
+        .tech-stack-wrapper
+            margin-top: 2rem
+            height: 25rem
+
+    .right-panel
+        position: relative
+        background-color: $platinum
+        padding: 2rem
+        padding-right: 0
+        button
+            border: 0
+            padding: 0
+            cursor: pointer
+            color: rgba($black-coffee, 0.6)
+            margin-top: 0.5rem
+            font-size: 0.85rem
+            background: none
+            margin-left: 0.5rem
+            svg
+                font-size: 0.7rem
+            &:hover
+                color: $tangerine
+        h2
+            color: $black-coffee
+            letter-spacing: 0.05rem
+            margin-bottom: 0rem
+            font-size: 1.5rem
+            width: auto
+            display: inline
+        p
+            color: rgba($black-coffee, 0.8)
+            font-size: 0.9rem
+            padding-top: 0.5rem
+            padding-bottom: 0.5rem
+        section
+            margin: 0
+            margin-bottom: 2rem
+            &:last-child
+                margin-bottom: 0
+        .box
+            display: flex
+            flex-direction: row
+            margin: 1rem 0
+            display: grid
+            grid-template-columns: 8.5fr 2fr
+            gap: 2rem
+            margin-left: 1rem
+            .dates
+                text-align: right
+                span
+                    font-size: 0.9rem
+                    text-transform: uppercase
+                    color: rgba($black-coffee, 0.35)
+                    font-weight: 600
+                    display: block
+                    font-family: monospace
+            .text
+                h4
+                    text-transform: uppercase
+                    color: rgba($black-coffee, 0.9)
+                    font-size: 1rem
+                    letter-spacing: 0.01rem
+                h5
+                    color: rgba($black-coffee, 0.6)
+                    font-size: 0.85rem
+                    margin-top: 0.25rem
+               
+                ul
+                    font-size: 0.9rem
+                    margin-top: 0.5rem
+                    margin-bottom: 0.5rem
+                    li
+                        margin-bottom: 0.25rem
+                        color: rgba($black-coffee, 0.6)
+        .hobbies
+            display: flex
+            gap: 2rem
+            margin-top: 1rem
+            margin-left: 1rem
+            .hobby
+                font-size: 1rem
+                text-transform: uppercase
+                letter-spacing: 0.01rem
+                font-weight: bold
+                span
+                    margin-left: 0.5rem
+        .skills
+            display: none
+        .skills-wrapper
+            margin-left: 1rem
+            margin-top: 1rem
+            color: $black-coffee
+
+@media (max-width: 768px)
+    .resume-wrapper
+        grid-template-columns: repeat(1, 1fr)
+    .resume-wrapper .right-panel
+        padding-left: 0
+        .skills
+            display: block
+    .tech-stack-wrapper, .additional-skills
+        display: none
+
+        
+@keyframes scroll
+    0%
+        transform: translateX(0)
+
+    100%
+        transform: translateX(calc((-5rem - 2rem) * 19))
+
+.carousel
+    margin: auto
+    overflow: hidden
+    position: relative
+    width: 12rem
+    border-left: 0.1rem solid $tangerine
+    border-right: 0.1rem solid $tangerine
+    padding: 1rem
+    background: rgba($platinum, 0.2)
+    .track
+        animation: scroll 60s linear infinite
+        display: flex
+        width: calc((5rem + 2rem) * 19)
+        &::before
+            content: ''
+            width: 13rem
+        .slide
+            height: 3rem
+            width: 5rem
+            margin-left: 2rem
+            position: relative
+            overflow: hidden
+            img
+                max-width: 100%
+                max-height: 100%
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                margin: auto

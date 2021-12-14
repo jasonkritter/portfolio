@@ -1,0 +1,21 @@
+.figure-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 1rem
+    figure
+        border: 0.1rem solid rgba($black-coffee, 0.05)
+        margin: auto
+        border-radius: 1rem
+        overflow: hidden
+        img, video
+            width: 100%
+            vertical-align: middle
+        figcaption
+            background-color: rgba($black-coffee, 0.05)
+            color: $black-coffee
+            padding: 0.5rem
+            text-align: center
+
+@media only screen and (max-width: 512px)
+    .figure-wrapper
+        grid-template-columns: 1fr

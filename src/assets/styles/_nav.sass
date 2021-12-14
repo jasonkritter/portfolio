@@ -1,0 +1,91 @@
+.navigation
+    background: $black-coffee
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1000
+    .navigation-wrapper
+        max-width: $max-width
+        width: 100%
+        margin: 0 auto
+        display: flex
+        header
+            a
+                display: block
+                color: $platinum
+                text-decoration: none
+                padding: 1rem 1rem
+                font-size: 1.4rem
+                font-weight: 600
+                letter-spacing: 0.05rem
+                &:hover
+                    color: $tangerine
+        nav
+            margin-left: auto
+            max-width: $max-width
+            padding: 0 1rem
+            ul
+                margin: 0
+                padding: 0
+                li
+                    list-style: none
+                    float: left
+                    a
+                        margin-left: 1.5rem
+                        display: block
+                        color: $platinum
+                        text-decoration: none
+                        padding: 1rem 0rem
+                        text-transform: lowercase
+                        font-size: 1.2rem
+                        &:hover, &.router-link-active
+                            color: $tangerine
+.page-header
+    display: flex
+.page-navigation
+    margin-left: auto
+    vertical-align: middle
+    margin-top: 1rem
+    margin-right: 0rem
+    ul
+        margin: 0
+        padding: 0
+        li
+            list-style: none
+            float: left
+            a
+                font-size: 1.2rem
+                margin-left: 1.5rem
+                display: block
+                color: $black-coffee
+                text-decoration: none
+                padding: 0.25rem 0rem
+                
+                text-transform: lowercase
+                border-radius: 0.5rem
+                &:hover, &.router-link-active
+                    color: $tangerine
+            &:first-child a
+                margin-left: 0
+
+@media only screen and (max-width: 768px)
+    .navigation
+        .navigation-wrapper
+            display: block
+            header a
+                padding-bottom: 0
+            nav
+                padding: 0
+                height: 3.2rem
+                background: $black-coffee
+                margin-left: 0
+                ul li a
+                    margin-left: 1rem
+    .page-header
+        display: block
+        margin-bottom: 1rem
+        nav
+            padding: 0
+            height: 3.2rem
+            margin-left: 0
