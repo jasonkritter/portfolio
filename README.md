@@ -1,4 +1,9 @@
-# portfolio
+# Term Project
+
+This is my Term Project for CS601. It is a resume/biography website.
+
+This website is built entirely in Vue.js. All stylesheets are written in
+Sass. 
 
 ## Project setup
 ```
