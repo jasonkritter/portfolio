@@ -9,8 +9,10 @@ npm run build
 cd dist
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
+touch README
 git init
 git add -A
-git commit -m 'deploy'
-git push -f git@github.com:jasonkritter/portfolio.git main:gh-pages
+git commit -m "deploy"
+git remote -v
+git push git@github.com:jasonkritter/portfolio.git main:gh-pages --force
 cd -
