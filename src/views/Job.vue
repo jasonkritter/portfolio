@@ -2,9 +2,7 @@
   <div class="job">
     <h2>Job</h2>
     <p>
-      I work as a Software Engineer at Sandia National Laboratories (SNL). It is
-      the best place to work in New Mexico besides Los Alamos National
-      Laboratories. I have been working at SNL for nearly 5 years. I develop web
+      I work at Sandia National Laboratories (SNL) as a Software Engineer. I have been working at SNL for nearly 5 years. I develop web
       applications using Angular, C#, .NET, and SQL Server.
     </p>
     <div class="cards">

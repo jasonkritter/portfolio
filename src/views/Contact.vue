@@ -6,7 +6,7 @@
       (optional).
     </p>
     <p class="notice">
-      Note: This form for validation testing and is not connected to a database.
+      Note: This form is for validation testing and is not connected to a database.
     </p>
     <div class="form">
       <section>

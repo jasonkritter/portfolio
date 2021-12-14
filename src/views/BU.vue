@@ -3,7 +3,7 @@
     <section>
       <h2>CS601 term project</h2>
       <p>
-        This website is built entirely in Vue.js. All stylesheets are written in
+        This website is built in Vue.js. All stylesheets are written in
         Sass. I used Visual Studio Code for development. I'm also using CodeKit,
         a Mac app that optimizes images and compiles my .sass files into a
         single styles.css file.
