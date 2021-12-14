@@ -3,7 +3,9 @@
 This is my Term Project for CS601. It is a resume/biography website.
 
 This website is built entirely in Vue.js. All stylesheets are written in
-Sass. 
+Sass.
+
+hosted here: https://kind-liskov-014009.netlify.app/
 
 ## Project setup
 ```
