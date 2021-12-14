@@ -79,12 +79,8 @@
                 >
               </h4>
               <h5>Sandia National Laboratories, Albuquerque</h5>
-              <ul v-show="summaries[0]">
-                <li>
-                  Designed a content management system (CMS) that enables users
-                  of varying technical skill to manage web content, and provides
-                  a platform to host internal web applications
-                </li>
+              <!--<ul v-show="summaries[0]">
+             
               </ul>
               <button @click="readSummary(0)">
                 <span v-if="summaries[0]"
@@ -93,7 +89,7 @@
                 <span v-else
                   >Expand <font-awesome-icon icon="chevron-down"
                 /></span>
-              </button>
+              </button>-->
             </div>
             <div class="dates">
               <span class="end">Present</span>
@@ -105,7 +101,7 @@
             <div class="text">
               <h4>Computer Software Support Technologist</h4>
               <h5>Sandia National Laboratories, Albuquerque</h5>
-              <ul v-show="summaries[1]">
+              <!--<ul v-show="summaries[1]">
                 <li>
                   Designed a content management system (CMS) that enables users
                   of varying technical skill to manage web content, and provides
@@ -144,7 +140,7 @@
                 <span v-else
                   >Expand <font-awesome-icon icon="chevron-down"
                 /></span>
-              </button>
+              </button>-->
             </div>
             <div class="dates">
               <span class="end">May '19</span>
